@@ -1,0 +1,18 @@
+$pink: #ff00b8;
+$yellow: #ffc700;
+$blue: #151371;
+$gradient1: linear-gradient(
+  104.61deg,
+  #ff00b8 2.65%,
+  #ff655b 51.83%,
+  #ffc700 100%
+);
+$gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
+
+@import "nav_bar.scss";
+
+body {
+  font-size: 62.5%;
+}
