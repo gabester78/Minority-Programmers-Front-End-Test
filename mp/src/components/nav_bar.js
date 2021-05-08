@@ -26,6 +26,7 @@ const NavBar = () => {
                         <p>Learn</p>
                     </NavLink>
                         <p>Join</p>
+                        <p className='space'>Join</p>
                 </div>
             </div>
       </nav>

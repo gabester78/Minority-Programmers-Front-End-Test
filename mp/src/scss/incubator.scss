@@ -1,0 +1,27 @@
+main {
+  .incubator_hero {
+    color: white;
+
+    img {
+      width: 100%;
+    }
+
+    .inc_container {
+      position: relative;
+      top: -325px;
+      left: 50%;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .BTNorange_inc {
+        @include orangeBTN;
+        margin-top: 25px;
+      }
+
+      .BTNorange_inc:hover {
+        @include orangeBTNhover;
+      }
+    }
+  }
+}

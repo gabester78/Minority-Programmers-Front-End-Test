@@ -11,11 +11,11 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
 
 @mixin orangeBTN {
   background-image: $gradient1;
-  width: 225px;
+  width: 315px;
   height: 50px;
   color: white;
-  border-radius: 15px;
-  font-size: 1.4rem;
+  border-radius: 4px;
+  font-size: 1.75rem;
   border: none;
   transition-duration: 15s;
 }
@@ -29,8 +29,8 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
   width: 225px;
   height: 50px;
   color: white;
-  border-radius: 15px;
-  font-size: 1.4rem;
+  border-radius: 4px;
+  font-size: 1.75rem;
   border: none;
   transition-duration: 15s;
 }
@@ -43,6 +43,7 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
 
 @import "nav_bar.scss";
 @import "home.scss";
+@import "incubator.scss";
 
 body {
   font-family: "Red Hat Display", sans-serif;
@@ -56,8 +57,12 @@ body {
     font-size: 5rem;
     font-weight: 700;
   }
+  h3 {
+    font-size: 4.7rem;
+    font-weight: 700;
+  }
   h4 {
-    font-size: 1.6rem;
+    font-size: 4rem;
     font-weight: 500;
   }
   h6 {

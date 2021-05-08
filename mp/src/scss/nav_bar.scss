@@ -1,7 +1,6 @@
 nav {
   display: flex;
   height: 80px;
-  border-bottom: 1px solid $pink;
   padding: 35px;
 
   .mplogo {
@@ -49,6 +48,10 @@ nav {
         :hover {
           color: $pink;
         }
+      }
+
+      .space {
+        color: white;
       }
     }
   }
