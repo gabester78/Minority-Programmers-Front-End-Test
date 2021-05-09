@@ -26,14 +26,15 @@
 
   .card_container {
     background-color: rgba(255, 255, 255, 0.3);
-    display: flex;
-    flex-direction: row;
-    padding: 100px 150px 0px 150px;
+    padding: 100px 65px 0px 50px;
 
     .card_intro {
       color: white;
-      margin-right: 32px;
-      margin-top: 100px;
+      margin: 50px 32px 0px 16px;
+      width: 23%;
+      padding: 60px 50px;
+      box-sizing: border-box;
+      float: left;
 
       h4 {
         font-weight: 700;
@@ -46,21 +47,26 @@
         line-height: 36.69px;
       }
     }
+  }
+
+  .react-multi-carousel-list {
+    justify-content: space-between;
+
+    li {
+      margin-right: 16px;
+    }
 
     .top_cards {
-      width: 438px;
+      width: 96%;
       height: 494px;
       padding: 38px 32px;
-      left: 0px;
-      top: 0px;
       background-color: white;
       border-radius: 20px;
-      margin-right: 32px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       box-sizing: border-box;
-      margin-bottom: 128px;
+      margin: 0px 16px 128px 16px;
 
       .title {
         display: flex;
@@ -124,19 +130,31 @@
           background-color: #0d0d46;
         }
 
-        .whiteBTN {
+        a {
           border: 2px solid #141471;
           width: 46%;
           height: 76px;
-          color: #141471;
           font-size: 1.13rem;
           font-weight: 700;
           text-align: center;
           background-color: white;
           border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+
+          button {
+            background-color: transparent;
+            border: none;
+            font-size: 1.13rem;
+            font-weight: 700;
+            text-align: center;
+            color: #141471;
+          }
         }
 
-        .whiteBTN:hover {
+        a:hover {
           background-color: rgb(218, 218, 218);
         }
       }
@@ -185,7 +203,7 @@
       color: white;
       margin: 16px 16px;
       width: 23%;
-      padding: 60px 50px;
+      padding: 70px 0px;
       box-sizing: border-box;
 
       h4 {
@@ -260,6 +278,7 @@
       .button_container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 32px;
 
         .blueBTN {
@@ -278,22 +297,50 @@
           background-color: #0d0d46;
         }
 
-        .whiteBTN {
+        a {
           border: 2px solid #141471;
           width: 46%;
           height: 76px;
-          color: #141471;
           font-size: 1.13rem;
           font-weight: 700;
           text-align: center;
           background-color: white;
           border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+
+          button {
+            background-color: transparent;
+            border: none;
+            font-size: 1.13rem;
+            font-weight: 700;
+            text-align: center;
+            color: #141471;
+          }
         }
 
-        .whiteBTN:hover {
+        a:hover {
           background-color: rgb(218, 218, 218);
         }
       }
+    }
+
+    .load_more {
+      width: 319px;
+      height: 64px;
+      padding: 16px 32px;
+      font-size: 1.5rem;
+      background: none;
+      border-radius: 4px;
+      border: 2px solid #ffffff;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .load_more:hover {
+      background-color: rgba(255, 255, 255, 0.116);
     }
   }
 }

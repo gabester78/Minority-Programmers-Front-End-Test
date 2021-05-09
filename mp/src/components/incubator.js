@@ -5,8 +5,29 @@ import Info1 from "../assets/info_card_1.png"
 import Info2 from "../assets/info_card_2.png"
 import Info3 from "../assets/info_card_3.png"
 import Data from "../data.json"
+import { NavLink } from "react-router-dom";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-
+const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
 const Incubator = () => {
     return (
@@ -23,6 +44,8 @@ const Incubator = () => {
                     <h4>Featured Startups</h4>
                     <p>Invest in the next billion dollar company today</p>
                 </div>
+                <div>
+            <Carousel className="carousel_container" responsive={responsive} >
             {Data.map((cardDetail, index)=>{
                 return <div className="top_cards">
                             <div className="title">                        
@@ -38,10 +61,14 @@ const Incubator = () => {
                             <img src={cardDetail.bar} alt="Progress bar graphic"/>
                             <div className="button_container">
                                 <button className="blueBTN">{cardDetail.button1}</button>
-                                <button className="whiteBTN">{cardDetail.button2}</button>
+                                <NavLink to="/incubator_details">
+                                    <button className="whiteBTN">{cardDetail.button2}</button>
+                                </NavLink>
                             </div>
                     </div>
             })}
+            </Carousel>;
+            </div>
             </section>
             <section className="info_cards_container">
                 <div style={{ backgroundImage: `url(${Info1})`, backgroundRepeat: 'no-repeat'}}>
@@ -51,7 +78,7 @@ const Incubator = () => {
                     <button>Join Minority Ventures Cohort</button>
                 </div>
                 <div style={{ backgroundImage: `url(${Info3})`, backgroundRepeat: 'no-repeat'}}>
-                    <button>Help &#60;Code &#47;&#62;</button>
+                    <button>Help &#60;Code&#47;&#62;</button>
                 </div>
             </section>
             <section className="bottom_container">
@@ -74,10 +101,13 @@ const Incubator = () => {
                             <img src={cardDetail.bar} alt="Progress bar graphic"/>
                             <div className="button_container">
                                 <button className="blueBTN">{cardDetail.button1}</button>
-                                <button className="whiteBTN">{cardDetail.button2}</button>
+                                <NavLink to="/incubator_details">
+                                    <button className="whiteBTN">{cardDetail.button2}</button>
+                                </NavLink>
                             </div>
                     </div>
             })}
+                <button className="load_more">Load More</button>
             </section>
         </main>
     )
