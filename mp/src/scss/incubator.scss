@@ -1,15 +1,14 @@
-main {
+.inc_main {
+  background-image: $gradient1;
+
   .incubator_hero {
     color: white;
-
-    img {
-      width: 100%;
-    }
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 537px;
 
     .inc_container {
-      position: relative;
-      top: -325px;
-      left: 50%;
+      margin-left: 55%;
+      padding-top: 150px;
       width: 40%;
       display: flex;
       flex-direction: column;
@@ -22,6 +21,138 @@ main {
       .BTNorange_inc:hover {
         @include orangeBTNhover;
       }
+    }
+  }
+
+  .card_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 100px 150px 0px 150px;
+
+    .card_intro {
+      color: white;
+      margin-right: 32px;
+
+      h4 {
+        font-weight: 700;
+        line-height: 79.38px;
+      }
+
+      p {
+        margin-top: 18px;
+        font-size: 1.88rem;
+        line-height: 36.69px;
+      }
+    }
+
+    .top_cards {
+      width: 438px;
+      height: 494px;
+      padding: 38px 32px;
+      left: 0px;
+      top: 0px;
+      background-color: white;
+      border-radius: 20px;
+      margin-right: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      margin-bottom: 128px;
+
+      .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+        h5 {
+          margin-left: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .description {
+        font-size: 1.13rem;
+        font-weight: 500;
+        line-height: 23.81px;
+        margin-bottom: 32px;
+      }
+
+      .funds_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        h6 {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+
+      .dollars {
+        font-size: 1.63rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      .button_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        .blueBTN {
+          border: none;
+          width: 171px;
+          height: 76px;
+          color: white;
+          font-size: 1.13rem;
+          font-weight: 700;
+          text-align: center;
+          background-color: #141471;
+          border-radius: 4px;
+        }
+
+        .blueBTN:hover {
+          background-color: #0d0d46;
+        }
+
+        .whiteBTN {
+          border: 2px solid #141471;
+          width: 171px;
+          height: 76px;
+          color: #141471;
+          font-size: 1.13rem;
+          font-weight: 700;
+          text-align: center;
+          background-color: white;
+          border-radius: 4px;
+        }
+
+        .whiteBTN:hover {
+          background-color: rgb(218, 218, 218);
+        }
+      }
+    }
+  }
+
+  .info_cards_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+
+    div {
+      width: 32%;
+      height: 346px;
+      border-radius: 20px;
     }
   }
 }
