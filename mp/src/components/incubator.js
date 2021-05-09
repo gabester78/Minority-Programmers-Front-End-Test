@@ -54,6 +54,31 @@ const Incubator = () => {
                     <button>Help &#60;Code &#47;&#62;</button>
                 </div>
             </section>
+            <section className="bottom_container">
+                <div className="bottom_intro">
+                    <h4>Upcoming Startups</h4>
+                    <p>These visionary companies are on their journey to change the world</p>
+                </div>
+                {Data.map((cardDetail, index)=>{
+                return <div className="bottom_cards">
+                            <div className="title">                        
+                                <img src={cardDetail.logo} alt="Mangoswap logo" />
+                                <h5>{cardDetail.title}</h5>
+                            </div>
+                            <p className="description">{cardDetail.description}</p>
+                            <div className="funds_container">
+                                <h6>{cardDetail.funds}</h6>
+                                <p>{cardDetail.completed}</p>
+                            </div>
+                            <p className="dollars">{cardDetail.dollars}</p>
+                            <img src={cardDetail.bar} alt="Progress bar graphic"/>
+                            <div className="button_container">
+                                <button className="blueBTN">{cardDetail.button1}</button>
+                                <button className="whiteBTN">{cardDetail.button2}</button>
+                            </div>
+                    </div>
+            })}
+            </section>
         </main>
     )
     }

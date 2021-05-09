@@ -28,12 +28,12 @@
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 100px 150px 0px 150px;
 
     .card_intro {
       color: white;
       margin-right: 32px;
+      margin-top: 100px;
 
       h4 {
         font-weight: 700;
@@ -110,7 +110,7 @@
 
         .blueBTN {
           border: none;
-          width: 171px;
+          width: 46%;
           height: 76px;
           color: white;
           font-size: 1.13rem;
@@ -126,7 +126,7 @@
 
         .whiteBTN {
           border: 2px solid #141471;
-          width: 171px;
+          width: 46%;
           height: 76px;
           color: #141471;
           font-size: 1.13rem;
@@ -147,12 +147,153 @@
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: space-between;
-    padding: 0px 150px;
+    padding: 0px 65px;
+    padding-bottom: 128px;
 
     div {
       width: 32%;
       height: 346px;
       border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        padding: 16px 32px;
+        font-size: 1.5rem;
+        background: none;
+        border-radius: 4px;
+        border: 2px solid #ffffff;
+        color: white;
+      }
+      button:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+      }
+    }
+  }
+
+  .bottom_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 50px;
+
+    .bottom_intro {
+      color: white;
+      margin: 16px 16px;
+      width: 23%;
+      padding: 60px 50px;
+      box-sizing: border-box;
+
+      h4 {
+        line-height: 79.38px;
+        font-size: 3.75rem;
+        font-weight: 700;
+      }
+
+      p {
+        line-height: 39.69px;
+        font-weight: 500;
+        font-size: 1.88rem;
+      }
+    }
+
+    .bottom_cards {
+      width: 23%;
+      height: 494px;
+      padding: 38px 32px;
+      left: 0px;
+      top: 0px;
+      background-color: white;
+      border-radius: 20px;
+      margin: 0px 16px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      margin-bottom: 40px;
+
+      .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+        h5 {
+          margin-left: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .description {
+        font-size: 1.13rem;
+        font-weight: 500;
+        line-height: 23.81px;
+        margin-bottom: 32px;
+      }
+
+      .funds_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        h6 {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+
+      .dollars {
+        font-size: 1.63rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      .button_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        .blueBTN {
+          border: none;
+          width: 46%;
+          height: 76px;
+          color: white;
+          font-size: 1.13rem;
+          font-weight: 700;
+          text-align: center;
+          background-color: #141471;
+          border-radius: 4px;
+        }
+
+        .blueBTN:hover {
+          background-color: #0d0d46;
+        }
+
+        .whiteBTN {
+          border: 2px solid #141471;
+          width: 46%;
+          height: 76px;
+          color: #141471;
+          font-size: 1.13rem;
+          font-weight: 700;
+          text-align: center;
+          background-color: white;
+          border-radius: 4px;
+        }
+
+        .whiteBTN:hover {
+          background-color: rgb(218, 218, 218);
+        }
+      }
     }
   }
 }
