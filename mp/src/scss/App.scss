@@ -21,6 +21,7 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
 
 @mixin orangeBTNhover {
   background-image: $gradient2;
+  cursor: pointer;
 }
 
 @mixin blueBTN {
@@ -36,6 +37,7 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
 
 @mixin blueBTNhover {
   background-image: $gradient1;
+  cursor: pointer;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
@@ -45,6 +47,7 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
 @import "home.scss";
 @import "incubator.scss";
 @import "incubator_details.scss";
+@import "learn.scss";
 
 body {
   font-family: "Red Hat Display", sans-serif;

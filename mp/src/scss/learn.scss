@@ -1,0 +1,247 @@
+main {
+  .learn_hero {
+    background-image: $gradient1;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+    height: 738px;
+    overflow: hidden;
+
+    img {
+      margin-top: 90px;
+      margin-left: -100px;
+      width: 60%;
+    }
+
+    div {
+      width: 41%;
+      margin-left: 50px;
+
+      h2 {
+        font-size: 4.7rem;
+        line-height: 99px;
+      }
+
+      p {
+        font-size: 2.5rem;
+        text-align: end;
+        font-style: italic;
+        margin-top: 20px;
+        font-weight: 700;
+        margin-right: 35px;
+
+        span {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  .content_container {
+    background-color: $blue;
+    padding: 102px 0px 102px 0px;
+
+    .search_field_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 61px;
+
+      label {
+        display: flex;
+        align-items: center;
+
+        .search_field {
+          width: 806px;
+          height: 55px;
+          border-radius: 8px;
+          border: 2px solid #d3d3d3;
+          padding: 16px;
+          box-sizing: border-box;
+        }
+
+        ::placeholder {
+          color: #a0a3bd;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+
+        .icon {
+          font-size: 1.5rem;
+          margin-left: -40px;
+        }
+      }
+
+      .submit_button {
+        margin-left: 42px;
+        width: 160px;
+        height: 55px;
+        box-sizing: border-box;
+        padding: 0px 42px 0px 21px;
+        border: 2px solid #d3d3d3;
+        border-radius: 8px;
+        color: $blue;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .icon {
+        font-size: 1rem;
+        margin-left: -30px;
+        color: $blue;
+      }
+    }
+  }
+
+  .header {
+    color: white;
+    font-size: 4.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 43px;
+
+    h3 {
+      margin-right: 42px;
+    }
+
+    .line {
+      width: 65%;
+      height: 4px;
+      box-sizing: border-box;
+      background-color: white;
+    }
+  }
+
+  .react-multi-carousel-list {
+    justify-content: space-between;
+
+    li {
+      margin-right: 200px;
+    }
+  }
+
+  .carousel_container {
+    margin-left: 105px;
+
+    .course_cards {
+      width: 772px;
+      height: 491px;
+      padding-top: 25px;
+      box-sizing: border-box;
+
+      .greenBTN {
+        width: 218.08px;
+        height: 35px;
+        box-sizing: border-box;
+        background: #9cff83;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        margin: 0px 16px 0px auto;
+
+        .dot {
+          width: 16.15px;
+          height: 16.15px;
+          background: #00d248;
+          border-radius: 100%;
+          margin-right: 40px;
+        }
+      }
+
+      .title {
+        color: white;
+        padding: 35px 50px 0px 50px;
+
+        h5 {
+          font-size: 4rem;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 2.25rem;
+          font-weight: 400;
+          margin-bottom: 44px;
+        }
+      }
+
+      .course_details {
+        padding: 0px 50px;
+        button {
+          width: 312px;
+          height: 76px;
+          background-image: $gradient1;
+          border-radius: 30px;
+          border: none;
+          left: 27%;
+          position: relative;
+          font-size: 2.25rem;
+          font-weight: 700;
+          margin-bottom: 44px;
+          color: white;
+        }
+
+        button:hover {
+          background-image: $gradient2;
+          cursor: pointer;
+        }
+
+        p {
+          font-size: 2.25rem;
+          font-weight: 400;
+          margin-bottom: 16px;
+          color: white;
+          text-align: end;
+        }
+
+        .completed {
+          font-size: 1.5rem;
+          margin-top: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .bottom_header {
+    color: white;
+    font-size: 4.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 43px;
+    margin-top: 120px;
+
+    h3 {
+      margin-right: 42px;
+    }
+
+    .line {
+      width: 54%;
+      height: 4px;
+      box-sizing: border-box;
+      background-color: white;
+    }
+  }
+
+  .load_more {
+    width: 319px;
+    height: 64px;
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    background: none;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+    color: white;
+    margin: 85px 0px 0px 40%;
+  }
+
+  .load_more:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+  }
+}

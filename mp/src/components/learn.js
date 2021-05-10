@@ -1,12 +1,13 @@
 import React from "react";
 import NavBar2 from "./nav_bar2.js"
-import Learn_hero from "../assets/Learn_Hero.svg"
+import Learn_hero from "../assets/Group 244.svg"
 import LearnData from "../learn_data.json"
+import Card_Background from "../assets/Courses_Background.svg"
 import { NavLink } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const responsive = {
     superLargeDesktop: {
@@ -32,84 +33,86 @@ const Learn = () => {
     return(
         <main>
             <NavBar2 />
-            <section>
+            <section className="learn_hero">
                 <img src={Learn_hero} alt="Graphic of a globe" />
                 <div>
                     <h2>Learn high in demand IT Skills &#38; Get Crypto</h2>
                     <p>powered by <span>KoinStreet</span></p>
                 </div>
             </section>
-            <section>
-                <article>
-                    <div>
+            <div className="content_container">
+                <section>
+                    <div className="search_field_container">
                         <label>
-                            <input type="text" placeholder="What event are you looking for?" FontAwesomeIcon icon={faSearch} />
+                            <input className="search_field" type="text" placeholder="What event are you looking for?"  />
+                            <p className="icon"><FontAwesomeIcon icon={faSearch}/></p>
                         </label>
-                        <input type="submit" value="Filter search" />
+                        <input className="submit_button" type="submit" value="Filter search" />
+                        <p className="icon"><FontAwesomeIcon icon={faChevronDown}/></p>
                     </div>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h3>My Courses</h3>
-                    <div className="line"></div>    
-                </article>
-                <article>
-                    <div>
-                        <Carousel className="carousel_container" responsive={responsive} >
-                            {LearnData.map((cardDetail, index)=>{
-                                return  <div className="course_cards">
-                                            <div className="greenBTN">
-                                                <div className="dot"></div>
-                                                <p>{cardDetail.topBTN}</p>
+                </section>
+                <section>
+                    <div className="header">
+                        <h3>My Courses</h3>
+                        <div className="line"></div>    
+                    </div>
+                        <div>
+                            <Carousel className="carousel_container" responsive={responsive} >
+                                {LearnData.map((cardDetail, index)=>{
+                                    return  <div className="course_cards" style={{ backgroundImage: `url(${Card_Background})`, backgroundRepeat: 'no-repeat'}}>
+                                                <div className="greenBTN">
+                                                    <div className="dot"></div>
+                                                    <p>{cardDetail.topBTN}</p>
+                                                </div>
+                                                <div className="title">                        
+                                                    <h5>{cardDetail.title}</h5>
+                                                    <p className="description">{cardDetail.description}</p>
+                                                </div>
+                                                <div className="course_details">  
+                                                <NavLink to="/my_courses">                       
+                                                    <button className="blueBTN">{cardDetail.button}</button>
+                                                </NavLink>    
+                                                <p>{cardDetail.modules}</p>
+                                                <img src={cardDetail.bar} alt="Progress bar graphic"/>
+                                                <p className="completed">{cardDetail.completed}</p>
+                                                </div>
                                             </div>
-                                            <div className="title">                        
-                                                <h5>{cardDetail.title}</h5>
-                                                <p className="description">{cardDetail.description}</p>
-                                            </div>         
-                                            <NavLink to="/my_courses">                       
-                                                <button className="blueBTN">{cardDetail.button}</button>
-                                            </NavLink>    
-                                            <p>{cardDetail.modules}</p>
-                                            <img src={cardDetail.bar} alt="Progress bar graphic"/>
-                                            <p>{cardDetail.completed}</p>
-                                        </div>
-                            })}
-                        </Carousel>;
+                                })}
+                            </Carousel>;
+                        </div>
+                </section>
+                <section>
+                    <div className="bottom_header">
+                        <h3>Featured Courses</h3>
+                        <div className="line"></div>    
                     </div>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h3>Featured Courses</h3>
-                    <div className="line"></div>    
-                </article>
-                <article>
-                    <div>
-                        <Carousel className="carousel_container" responsive={responsive} >
-                            {LearnData.map((cardDetail, index)=>{
-                                return  <div className="course_cards">
-                                            <div className="greenBTN">
-                                                <div className="dot"></div>
-                                                <p>{cardDetail.topBTN}</p>
+                        <div>
+                            <Carousel className="carousel_container" responsive={responsive} >
+                                {LearnData.map((cardDetail, index)=>{
+                                    return  <div className="course_cards" style={{ backgroundImage: `url(${Card_Background})`, backgroundRepeat: 'no-repeat'}}>
+                                                <div className="greenBTN">
+                                                    <div className="dot"></div>
+                                                    <p>{cardDetail.topBTN}</p>
+                                                </div>
+                                                <div className="title">                        
+                                                    <h5>{cardDetail.title}</h5>
+                                                    <p>{cardDetail.description}</p>
+                                                </div>
+                                                <div className="course_details">    
+                                                    <NavLink to="/my_courses">                       
+                                                        <button>{cardDetail.button}</button>
+                                                    </NavLink>    
+                                                    <p>{cardDetail.modules}</p>
+                                                    <img src={cardDetail.bar} alt="Progress bar graphic"/>
+                                                    <p className="completed">{cardDetail.completed}</p>
+                                                </div>  
                                             </div>
-                                            <div className="title">                        
-                                                <h5>{cardDetail.title}</h5>
-                                                <p className="description">{cardDetail.description}</p>
-                                            </div>         
-                                            <NavLink to="/my_courses">                       
-                                                <button className="blueBTN">{cardDetail.button}</button>
-                                            </NavLink>    
-                                            <p>{cardDetail.modules}</p>
-                                            <img src={cardDetail.bar} alt="Progress bar graphic"/>
-                                            <p>{cardDetail.completed}</p>
-                                        </div>
-                            })}
-                        </Carousel>;
-                    </div>
-                </article>
-                <button className="load_more">Load More</button>
-            </section>
+                                })}
+                            </Carousel>;
+                        </div>
+                    <button className="load_more">Load More</button>
+                </section>
+            </div>
         </main>
     )
 }
