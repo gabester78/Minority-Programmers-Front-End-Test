@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "topBTN":"Earn $30",
+        "title":"Intro to Blockchain",
+        "description":"Blockchain Cryptocurrency Fundamentals",
+        "button":"Learn",
+        "modules":"8.3/10 Modules",
+        "bar":"./card_assets/mini_progress_bar.svg",
+        "completed":"83% Completed"
+    },
+    {
+        "id": 1,
+        "topBTN":"Earn $30",
+        "title":"Intro to Blockchain",
+        "description":"Blockchain Cryptocurrency Fundamentals",
+        "button":"Learn",
+        "modules":"8.3/10 Modules",
+        "bar":"./card_assets/mini_progress_bar.svg",
+        "completed":"83% Completed"
+    },
+    {
+        "id": 2,
+        "topBTN":"Earn $30",
+        "title":"Intro to Blockchain",
+        "description":"Blockchain Cryptocurrency Fundamentals",
+        "button":"Learn",
+        "modules":"8.3/10 Modules",
+        "bar":"./card_assets/mini_progress_bar.svg",
+        "completed":"83% Completed"
+    },
+    {
+        "id": 3,
+        "topBTN":"Earn $30",
+        "title":"Intro to Blockchain",
+        "description":"Blockchain Cryptocurrency Fundamentals",
+        "button":"Learn",
+        "modules":"8.3/10 Modules",
+        "bar":"./card_assets/mini_progress_bar.svg",
+        "completed":"83% Completed"
+    }
+]

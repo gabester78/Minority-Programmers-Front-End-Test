@@ -36,7 +36,7 @@ nav {
       justify-content: space-between;
       width: 40%;
       font-size: 1.6rem;
-
+      margin-right: 25px;
       p {
         color: #676565;
         :hover {
@@ -51,8 +51,8 @@ nav {
         }
       }
 
-      .space {
-        color: white;
+      img {
+        height: 85px;
       }
     }
   }
