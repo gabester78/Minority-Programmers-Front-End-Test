@@ -17,7 +17,6 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
   border-radius: 4px;
   font-size: 1.75rem;
   border: none;
-  transition-duration: 15s;
 }
 
 @mixin orangeBTNhover {
@@ -44,6 +43,7 @@ $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
 @import "nav_bar.scss";
 @import "home.scss";
 @import "incubator.scss";
+@import "incubator_details.scss";
 
 body {
   font-family: "Red Hat Display", sans-serif;

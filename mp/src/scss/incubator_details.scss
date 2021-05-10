@@ -1,0 +1,304 @@
+.inc_details {
+  background-image: $gradient1;
+
+  .header {
+    background-color: white;
+    margin: 69px auto 26px auto;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+    padding: 42px 45.5px;
+
+    .header_details {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        margin-right: 32px;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 10px;
+        }
+
+        h5 {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .funds_container {
+      display: flex;
+      align-items: center;
+
+      .funds {
+        display: flex;
+        flex-direction: column;
+        margin-right: 55px;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 5px;
+
+          h5 {
+            font-size: 1.69rem;
+            font-weight: 500;
+          }
+          p {
+            font-size: 1.13rem;
+            font-weight: 500;
+          }
+        }
+
+        .dollars {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .header_button {
+      background-image: $gradient1;
+      width: 304px;
+      height: 76px;
+      color: white;
+      border-radius: 4px;
+      font-size: 1.75rem;
+      border: none;
+      font-weight: 700;
+    }
+
+    .header_button:hover {
+      background-image: $gradient2;
+    }
+  }
+
+  .content_container {
+    display: flex;
+    justify-content: center;
+
+    .sidebar {
+      width: 29%;
+      height: 10%;
+      box-sizing: border-box;
+      background-color: white;
+      margin-right: 26px;
+
+      .divider {
+        border-bottom: 1px solid #cccccc;
+        padding: 32px 64px;
+      }
+
+      .team_details {
+        padding: 32px 64px 0px 64px;
+
+        .social_container {
+          display: flex;
+          align-items: center;
+          margin: 10px 16px 32px 0px;
+
+          h4 {
+            font-size: 1.88rem;
+            font-weight: 500;
+            color: rgba(0, 64, 255, 0.62);
+            margin-right: 16px;
+          }
+
+          a {
+            font-size: 1.5rem;
+            margin-right: 16px;
+            color: rgba(0, 64, 255, 0.62);
+          }
+
+          a:hover {
+            color: rgb(0, 22, 88);
+          }
+        }
+
+        .other_details {
+          margin-bottom: 32px;
+        }
+      }
+
+      h4 {
+        font-size: 1.88rem;
+        font-weight: 500;
+      }
+
+      .tags {
+        font-size: 1.13rem;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .team {
+        padding: 32px 64px 16px 64px;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+
+        h3 {
+          font-size: 2.25rem;
+          font-weight: 500;
+          margin-bottom: 32px;
+        }
+
+        .bio {
+          display: flex;
+          margin-bottom: 16px;
+
+          .avatar {
+            width: 70px;
+            height: 70px;
+            background-color: #c4c4c4;
+            border-radius: 100%;
+            margin-right: 16px;
+          }
+
+          h5 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: -5px;
+          }
+        }
+      }
+
+      .tags_content_container {
+        padding: 32px 64px 16px 64px;
+        h3 {
+          font-size: 2.25rem;
+          font-weight: 500;
+          margin-bottom: 32px;
+        }
+
+        .tag_button_container {
+          display: flex;
+          margin-bottom: 16px;
+
+          p {
+            font-size: 1.13rem;
+            height: 40px;
+            border: 2px solid #cccccc;
+            padding: 8px 16px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .right_column {
+      display: flex;
+      flex-direction: column;
+      width: 63.5%;
+
+      .about {
+        background-color: white;
+
+        h3 {
+          font-size: 2.25rem;
+          font-weight: 500;
+          margin-bottom: 16px;
+        }
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin-bottom: 64px;
+          line-height: 31.75px;
+        }
+
+        div {
+          padding: 32px 64px 0px 64px;
+          border-bottom: 1px solid #cccccc;
+        }
+      }
+
+      .startups {
+        background-color: white;
+        margin-top: 32px;
+        padding: 32px 64px 0px 64px;
+        margin-bottom: 61px;
+        h3 {
+          font-size: 2.25rem;
+          font-weight: 500;
+          margin-bottom: 32px;
+        }
+
+        .react-multi-carousel-list {
+          justify-content: space-between;
+
+          li {
+            margin-right: 95px;
+          }
+
+          .top_cards {
+            width: 438px;
+            height: 254px;
+            padding: 32px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin: 0px 16px 32px 0px;
+            border: 1px solid #979797;
+
+            .title {
+              display: flex;
+              align-items: center;
+              margin-bottom: 16px;
+
+              h5 {
+                font-size: 2.25rem;
+                margin-left: 16px;
+                font-weight: 500;
+              }
+            }
+
+            .description {
+              font-size: 1.13rem;
+              font-weight: 500;
+              line-height: 23.81px;
+              margin-bottom: 32px;
+            }
+
+            .funds_container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 8px;
+
+              h6 {
+                font-size: 1.5rem;
+                font-weight: 500;
+              }
+
+              p {
+                font-size: 1rem;
+                font-weight: 500;
+              }
+            }
+
+            .dollars {
+              font-size: 1.63rem;
+              font-weight: 700;
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
