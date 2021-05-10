@@ -69,7 +69,7 @@ const Learn = () => {
                                                     <p className="description">{cardDetail.description}</p>
                                                 </div>
                                                 <div className="course_details">  
-                                                <NavLink to="/my_courses">                       
+                                                <NavLink to="/modules">                       
                                                     <button className="blueBTN">{cardDetail.button}</button>
                                                 </NavLink>    
                                                 <p>{cardDetail.modules}</p>
@@ -99,7 +99,7 @@ const Learn = () => {
                                                     <p>{cardDetail.description}</p>
                                                 </div>
                                                 <div className="course_details">    
-                                                    <NavLink to="/my_courses">                       
+                                                    <NavLink to="/modules">                       
                                                         <button>{cardDetail.button}</button>
                                                     </NavLink>    
                                                     <p>{cardDetail.modules}</p>
