@@ -1,14 +1,17 @@
 .sidebar_main {
   background-color: $blue;
   color: white;
-  width: 26%;
-  height: 100%;
+  width: 25%;
+  height: 2000px;
+  box-sizing: border-box;
   padding-top: 106px;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   .course_header {
     display: flex;
     align-items: center;
-    margin: 0px 0px 49px 50px;
+    margin: 0px 0px 49px 35px;
 
     img {
       width: 40%;
@@ -22,7 +25,7 @@
   }
 
   .courseH5 {
-    font-size: 3rem;
+    font-size: 2.9rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 136px;

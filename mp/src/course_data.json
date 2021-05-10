@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "topBTN":"Completed",
+        "title":"Week 1 - Fundamentals of Cryptocurrency",
+        "bar":"./card_assets/Mod_progress_bar.svg",
+        "completed":"100% Completed"
+    },
+    {
+        "id": 1,
+        "topBTN":"Completed",
+        "title":"Week 1 - Fundamentals of Cryptocurrency",
+        "bar":"./card_assets/Mod_progress_bar.svg",
+        "completed":"100% Completed"
+    },
+    {
+        "id": 2,
+        "topBTN":"Completed",
+        "title":"Week 1 - Fundamentals of Cryptocurrency",
+        "bar":"./card_assets/Mod_progress_bar.svg",
+        "completed":"100% Completed"
+    },
+    {
+        "id": 3,
+        "topBTN":"In Progress",
+        "title":"Week 4 - Fundamentals of Cryptocurrency",
+        "bar":"./card_assets/Mod_in_progress_bar.svg",
+        "completed":"83% Completed"
+    },
+    {
+        "id": 3,
+        "topBTN":"In Progress",
+        "title":"Week 4 - Fundamentals of Cryptocurrency",
+        "bar":"./card_assets/Mod_in_progress_bar.svg",
+        "completed":"83% Completed"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "screen":"./card_assets/Activity1.png",
+        "title":"Activity 1 - Join Clickup",
+        "topBTN":"./card_assets/GreenButton.svg"
+    },
+    {
+        "id": 1,
+        "screen":"./card_assets/Activity2.png",
+        "title":"Activity 2 - Join Discord",
+        "topBTN":"./card_assets/OrangeButton.svg"
+    },
+    {
+        "id": 2,
+        "screen":"./card_assets/Activity3.png",
+        "title":"Activity 3 - Create Avatar",
+        "topBTN":"./card_assets/WhiteButton.svg"
+    },
+    {
+        "id": 3,
+        "screen":"./card_assets/Activity1.png",
+        "title":"Activity 1 - Join Clickup",
+        "topBTN":"./card_assets/GreenButton.svg"
+    },
+    {
+        "id": 4,
+        "screen":"./card_assets/Activity2.png",
+        "title":"Activity 2 - Join Discord",
+        "topBTN":"./card_assets/OrangeButton.svg"
+    }
+]

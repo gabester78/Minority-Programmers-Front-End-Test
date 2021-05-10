@@ -4,6 +4,7 @@ import Incubator from "./components/incubator.js";
 import Incubator_details from "./components/incubator_details.js";
 import Learn from "./components/learn.js";
 import Modules from "./components/modules.js";
+import Activity from "./components/activity";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/incubator_details" component={Incubator_details} />
         <Route path="/learn" component={Learn} />
         <Route path="/modules" component={Modules} />
+        <Route path="/activity" component={Activity} />
       </Switch>
     </div>
   );

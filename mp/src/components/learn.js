@@ -40,7 +40,7 @@ const Learn = () => {
                     <p>powered by <span>KoinStreet</span></p>
                 </div>
             </section>
-            <div className="content_container">
+            <div className="learn_container">
                 <section>
                     <div className="search_field_container">
                         <label>
@@ -52,12 +52,12 @@ const Learn = () => {
                     </div>
                 </section>
                 <section>
-                    <div className="header">
+                    <div className="learn_header">
                         <h3>My Courses</h3>
                         <div className="line"></div>    
                     </div>
                         <div>
-                            <Carousel className="carousel_container" responsive={responsive} >
+                            <Carousel className="learn_carousel" responsive={responsive} >
                                 {LearnData.map((cardDetail, index)=>{
                                     return  <div className="course_cards" style={{ backgroundImage: `url(${Card_Background})`, backgroundRepeat: 'no-repeat'}}>
                                                 <div className="greenBTN">
@@ -87,7 +87,7 @@ const Learn = () => {
                         <div className="line"></div>    
                     </div>
                         <div>
-                            <Carousel className="carousel_container" responsive={responsive} >
+                            <Carousel className="learn_carousel" responsive={responsive} >
                                 {LearnData.map((cardDetail, index)=>{
                                     return  <div className="course_cards" style={{ backgroundImage: `url(${Card_Background})`, backgroundRepeat: 'no-repeat'}}>
                                                 <div className="greenBTN">
