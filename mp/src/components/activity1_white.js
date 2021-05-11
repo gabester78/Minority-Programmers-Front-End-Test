@@ -6,7 +6,7 @@ import RightArrow from "../assets/Right_arrow.svg";
 import Activity1_hero_white from "../assets/Activity1_hero_white.png";
 import Clock from "../assets/Clock_icon.svg";
 import Activity1_background from "../assets/Activity1_background.svg";
-import Modal_white from "./modal_white.js"
+import ModalWhite from "./modal_white.js"
 
 const Activity1 = () =>{
     useEffect(()=> {
@@ -21,7 +21,7 @@ const Activity1 = () =>{
             <section className="activity1_container">
                 <Sidebar />
                 <section className="activity1_content">
-                <Modal_white trigger={show} setTrigger={setShow}/>
+                <ModalWhite trigger={show} setTrigger={setShow}/>
                     <div className="activity1_hero" onClick={() => setShow(true)}>
                         <img src={Activity1_hero_white} alt="Graphic of a video" />
                     </div>

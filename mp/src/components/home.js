@@ -3,6 +3,8 @@ import Hero from "../assets/Hero.jpg";
 import Banner from "../assets/Banner.jpg";
 import Classroom from "../assets/Classroom.jpg";
 import NavBar from "./nav_bar.js"
+import Banner2 from "../assets/Banner2.svg";
+import Banner3 from "../assets/Banner3.svg";
 
 const Home = () => {
     return (
@@ -36,9 +38,16 @@ const Home = () => {
                     <button className="BTNorange2">Learn More</button>
                 </div>
                 <div className="events_heading">
-                    <h2>Minority Programmers mission</h2> <h2>is to bring diversity through STEM education and innovation.</h2>
-                    
+                    <h2>Minority Programmers mission</h2>
+                    <h2>is to bring diversity through STEM education and innovation.</h2>
                 </div>
+            </section>
+            <section className="principles" style={{ backgroundImage: `url(${Banner2})`, backgroundRepeat: 'no-repeat'}}>
+                <h2>Our Core Principles</h2>
+                <p>They're using our own satellites against us. And the clock is ticking. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Must go faster... go, go, go, go, go! Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.</p>
+            </section>
+            <section className="services">
+                <img src={Banner3} alt="Graphic with details about services" />
             </section>
         </main>
     )
