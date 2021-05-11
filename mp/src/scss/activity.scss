@@ -4,6 +4,7 @@
 
   .activity_content {
     width: 75%;
+    overflow: hidden;
 
     .activity_hero {
       background-image: $gradient1;

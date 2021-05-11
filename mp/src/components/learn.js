@@ -110,7 +110,7 @@ const Learn = () => {
                                 })}
                             </Carousel>;
                         </div>
-                    <button className="load_more">Load More</button>
+                    <button className="load_more_learn">Load More</button>
                 </section>
             </div>
         </main>

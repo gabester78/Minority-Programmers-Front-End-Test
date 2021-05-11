@@ -10,7 +10,7 @@ const Modal = (props) => {
             <p>90% Complete</p>
             <h3>You just completed</h3>
             <h3 className="bold">Activity 1: Join Clickup</h3>
-            <NavLink to="/activity">
+            <NavLink to="/activity_white">
                 <button>Go to Next Lesson</button>
             </NavLink>
             <p className="cancel" onClick={() => props.setTrigger(false)}>Cancel</p>
