@@ -99,7 +99,7 @@ const Learn = () => {
                                                     <p>{cardDetail.description}</p>
                                                 </div>
                                                 <div className="course_details">    
-                                                    <NavLink to="/modules">                       
+                                                    <NavLink to="/modules_white">                       
                                                         <button>{cardDetail.button}</button>
                                                     </NavLink>    
                                                     <p>{cardDetail.modules}</p>
