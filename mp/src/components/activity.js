@@ -17,20 +17,21 @@ const Activity = () =>{
                 <section className="activity_content">
                     <div className="activity_hero">
                         <h1>Week 1</h1>
-                        <h4>Progess</h4>
+                        <h4>Progress</h4>
                         <p>10/10</p>
                         <img src={ProgressBar} alt="progress bar graphic" />
                         <p>100% Complete</p>
                     </div>
-                    <div>
+                    <div className="arrow_container">
                         <img src={LeftArrow} alt="Left arrow graphic" />
                         <img src={RightArrow} alt="Left arrow graphic" />
                     </div>
                     {ActivityData.map((cardDetail, index)=>{
                         return  <div className="activity_cards" style={{ backgroundImage: `url(${CourseCard})`, backgroundRepeat: 'no-repeat'}}>                    
                                     <img src={cardDetail.screen} alt="A screenshot graphic"/>
+                            
                                     <p>{cardDetail.title}</p>
-                                    <img src={cardDetail.topBTN} alt="Button graphic"/>
+                                    <img className="button" src={cardDetail.topBTN} alt="Button graphic"/>
                                 </div>
                     })}
                 </section>
