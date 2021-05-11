@@ -6,6 +6,7 @@ import CourseCard from "../assets/Module_cards_background.svg";
 import ProgressBar from "../assets/Activity_progress_bar.svg";
 import LeftArrow from "../assets/Left_arrow.svg";
 import RightArrow from "../assets/Right_arrow.svg";
+import { NavLink } from "react-router-dom";
 
 
 const Activity = () =>{
@@ -29,8 +30,9 @@ const Activity = () =>{
                     {ActivityData.map((cardDetail, index)=>{
                         return  <div className="activity_cards" style={{ backgroundImage: `url(${CourseCard})`, backgroundRepeat: 'no-repeat'}}>                    
                                     <img src={cardDetail.screen} alt="A screenshot graphic"/>
-                            
-                                    <p>{cardDetail.title}</p>
+                                    <NavLink to="/activity1">
+                                        <p>{cardDetail.title}</p>
+                                    </NavLink>
                                     <img className="button" src={cardDetail.topBTN} alt="Button graphic"/>
                                 </div>
                     })}
