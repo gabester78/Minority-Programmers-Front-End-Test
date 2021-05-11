@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Sidebar from "./courses_sidebar.js";
 import NavBar2 from "./nav_bar2.js";
 import LeftArrow from "../assets/Left_arrow.svg";
@@ -6,17 +6,23 @@ import RightArrow from "../assets/Right_arrow.svg";
 import Activity1_hero from "../assets/Activity1_hero.png";
 import Clock from "../assets/Clock_icon.svg";
 import Activity1_background from "../assets/Activity1_background.svg";
-
-
+import Modal from "./modal.js"
 
 const Activity1 = () =>{
+    useEffect(()=> {
+        window.scrollTo(0, 0);
+    });
+
+    const[show, setShow] = useState(false);
+    
     return(
         <main>
             <NavBar2 />
             <section className="activity1_container">
                 <Sidebar />
                 <section className="activity1_content">
-                    <div className="activity1_hero">
+                <Modal trigger={show} setTrigger={setShow}/>
+                    <div className="activity1_hero"  onClick={() => setShow(true)}>
                         <img src={Activity1_hero} alt="Graphic of a video" />
                     </div>
                     <div className="arrow_container">

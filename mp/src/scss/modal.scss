@@ -1,0 +1,59 @@
+.modal {
+  z-index: 1;
+  width: 30%;
+  height: 80%;
+  position: fixed;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 23%;
+  background-color: rgba(21, 19, 113, 0.95);
+  color: white;
+  box-shadow: 0px 5px 40px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 420px;
+    height: 64px;
+    margin: 20px 0px;
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    background-image: $gradient1;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .cancel {
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+}
