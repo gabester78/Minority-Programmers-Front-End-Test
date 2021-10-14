@@ -14,7 +14,7 @@ import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <article className="App">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/incubator" component={Incubator} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/activity1_white" component={Activity1_white} />
       </Switch>
       <Footer />
-    </div>
+    </article>
   );
 }
 

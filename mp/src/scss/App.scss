@@ -8,6 +8,10 @@ $gradient1: linear-gradient(
   #ffc700 100%
 );
 $gradient2: linear-gradient(90deg, #ea02b2 2.65%, #920997 51.83%, #311179 100%);
+$mobile: 500px;
+$tablet: 800px;
+$tabletLandscape: 1280px;
+$laptop: 1440px;
 
 @mixin orangeBTN {
   background-image: $gradient1;

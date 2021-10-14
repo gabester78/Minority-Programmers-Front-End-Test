@@ -31,7 +31,7 @@ const Modules = () => {
                         <h3>Message</h3>
                     </div>
                     {CourseData.map((cardDetail, index)=>{
-                        return  <div className="module_cards" style={{ backgroundImage: `url(${CourseCard})`, backgroundRepeat: 'no-repeat'}}>
+                        return  <div className="module_cards" style={{ backgroundImage: `url(${CourseCard})`, backgroundRepeat: 'no-repeat'}} key={`course-cards-${index}`}>
                                     <div className="greenBTN">
                                         <p>{cardDetail.topBTN}</p>
                                     </div>

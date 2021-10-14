@@ -142,7 +142,7 @@ const Incubator_details = () => {
                         <div>
                             <Carousel className="carousel_container" responsive={responsive} >
                                 {Data.map((cardDetail, index)=>{
-                                    return  <div className="top_cards">
+                                    return  <div className="top_cards" key={`details-card-${index}`}>
                                                 <div className="title">                        
                                                     <img src={cardDetail.logo} alt="Mangoswap logo" />
                                                     <h5>{cardDetail.title}</h5>

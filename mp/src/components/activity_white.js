@@ -28,7 +28,7 @@ const Activity = () =>{
                         <img src={RightArrow} alt="Left arrow graphic" />
                     </div>
                     {ActivityData.map((cardDetail, index)=>{
-                        return  <div className="activity_cards" style={{ backgroundImage: `url(${CourseCard})`, backgroundRepeat: 'no-repeat'}}>                    
+                        return  <div className="activity_cards" style={{ backgroundImage: `url(${CourseCard})`, backgroundRepeat: 'no-repeat'}} key={`white-activity-cards-${index}`}>                    
                                     <img src={cardDetail.screen} alt="A screenshot graphic"/>
                                     <NavLink to="/activity1_white">
                                         <p>{cardDetail.title}</p>

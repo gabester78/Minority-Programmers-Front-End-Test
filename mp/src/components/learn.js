@@ -89,7 +89,7 @@ const Learn = () => {
                         <div>
                             <Carousel className="learn_carousel" responsive={responsive} >
                                 {LearnData.map((cardDetail, index)=>{
-                                    return  <div className="course_cards" style={{ backgroundImage: `url(${Card_Background})`, backgroundRepeat: 'no-repeat'}}>
+                                    return  <div className="course_cards" style={{ backgroundImage: `url(${Card_Background})`, backgroundRepeat: 'no-repeat'}} id={index}>
                                                 <div className="greenBTN">
                                                     <div className="dot"></div>
                                                     <p>{cardDetail.topBTN}</p>

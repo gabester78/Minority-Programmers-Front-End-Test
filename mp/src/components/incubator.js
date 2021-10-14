@@ -46,30 +46,30 @@ const Incubator = () => {
                     <h4>Featured Startups</h4>
                     <p>Invest in the next billion dollar company today</p>
                 </div>
-                <div>
-            <Carousel className="carousel_container" responsive={responsive} >
-            {Data.map((cardDetail, index)=>{
-                return <div className="top_cards">
-                            <div className="title">                        
-                                <img src={cardDetail.logo} alt="Mangoswap logo" />
-                                <h5>{cardDetail.title}</h5>
-                            </div>
-                            <p className="description">{cardDetail.description}</p>
-                            <div className="funds_container">
-                                <h6>{cardDetail.funds}</h6>
-                                <p>{cardDetail.completed}</p>
-                            </div>
-                            <p className="dollars">{cardDetail.dollars}</p>
-                            <img src={cardDetail.bar} alt="Progress bar graphic"/>
-                            <div className="button_container">
-                                <button className="blueBTN">{cardDetail.button1}</button>
-                                <NavLink to="/incubator_details">
-                                    <button className="whiteBTN">{cardDetail.button2}</button>
-                                </NavLink>
-                            </div>
-                    </div>
-            })}
-            </Carousel>;
+            <div>
+                <Carousel className="carousel_container" responsive={responsive} >
+                {Data.map((cardDetail, index)=>{
+                    return <div className="top_cards" key={`top-data-cards-${index}`}>
+                                <div className="title">                        
+                                    <img src={cardDetail.logo} alt="Mangoswap logo" />
+                                    <h5>{cardDetail.title}</h5>
+                                </div>
+                                <p className="description">{cardDetail.description}</p>
+                                <div className="funds_container">
+                                    <h6>{cardDetail.funds}</h6>
+                                    <p>{cardDetail.completed}</p>
+                                </div>
+                                <p className="dollars">{cardDetail.dollars}</p>
+                                <img src={cardDetail.bar} alt="Progress bar graphic"/>
+                                <div className="button_container">
+                                    <button className="blueBTN">{cardDetail.button1}</button>
+                                    <NavLink to="/incubator_details">
+                                        <button className="whiteBTN">{cardDetail.button2}</button>
+                                    </NavLink>
+                                </div>
+                        </div>
+                })}
+                </Carousel>;
             </div>
             </section>
             <section className="info_cards_container">
@@ -89,7 +89,7 @@ const Incubator = () => {
                     <p>These visionary companies are on their journey to change the world</p>
                 </div>
                 {Data.map((cardDetail, index)=>{
-                return <div className="bottom_cards">
+                return <div className="bottom_cards" key={`bottom-data-cards-${index}`}>
                             <div className="title">                        
                                 <img src={cardDetail.logo} alt="Mangoswap logo" />
                                 <h5>{cardDetail.title}</h5>
