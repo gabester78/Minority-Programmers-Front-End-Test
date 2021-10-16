@@ -1,10 +1,6 @@
 import React from "react";
 import Hero from "../assets/Hero.jpg";
-import Banner from "../assets/Banner.jpg";
-import Classroom from "../assets/Classroom.jpg";
 import NavBar from "./nav_bar.js";
-import Banner2 from "../assets/Banner2.svg";
-import Banner3 from "../assets/Banner3.svg";
 
 const Home = () => {
   return (
@@ -55,8 +51,6 @@ const Home = () => {
           amet ligula eget dolor maximus finibus et ac magna.
         </p>
       </article>
-
-      {/* <img src={Banner3} alt="Graphic with details about services" /> */}
     </main>
   );
 };
