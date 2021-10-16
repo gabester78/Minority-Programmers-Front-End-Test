@@ -1,58 +1,61 @@
 nav {
   display: flex;
-  height: 80px;
+  justify-content: space-between;
   padding: 35px;
   background-color: white;
-
-  .mplogo {
-    height: 80px;
-    margin: 0px 80px 0px 25px;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .nav_container {
+  .nav_social_container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-
-    .nav_icons {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 20%;
-
-      a {
-        font-size: 1.8rem;
-        color: #676565;
-        :hover {
-          color: $pink;
-        }
-      }
+    align-items: center;
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
     }
 
-    .nav_links {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 40%;
-      font-size: 1.6rem;
+    img {
+      height: 60px;
+      margin-right: 10px;
+    }
 
+    a {
+      font-size: 1.5rem;
+      color: $navLinks;
+      margin-right: 30px;
+      @media (max-width: $tablet) {
+        margin-right: 20px;
+      }
+      :hover {
+        color: $pink;
+      }
+    }
+  }
+
+  .nav_link_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $navLinks;
+    @media (max-width: $tablet) {
+      justify-content: space-evenly;
+    }
+
+    a {
+      color: $navLinks;
+      text-decoration: none;
+      margin-left: 30px;
+
+      @media (max-width: $tablet) {
+        margin-left: 0px;
+      }
+      :hover {
+        color: $pink;
+      }
       p {
-        color: #676565;
-        :hover {
-          color: $pink;
-        }
-      }
-      a {
-        text-decoration: none;
-        color: #676565;
-        :hover {
-          color: $pink;
-        }
-      }
-
-      .space {
-        color: white;
+        font-size: 1.2rem;
       }
     }
   }

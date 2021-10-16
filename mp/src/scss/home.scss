@@ -1,22 +1,47 @@
 main {
   .hero {
-    background-image: $gradient1;
-    padding: 5px 0px 5px 0px;
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
 
     img {
       width: 100%;
+      border-top-width: 5px;
+      border-bottom-width: 5px;
+      border-style: solid;
+      border-image: $gradient1 1 0;
+    }
+
+    .BTNorange {
+      @include orangeBTN;
+      position: relative;
+      top: -120px;
+      left: 12%;
+      @media (max-width: $laptop) {
+        top: -100px;
+      }
+      @media (max-width: $tabletLandscape) {
+        top: -80px;
+      }
+      @media (max-width: $tablet) {
+        top: -75px;
+      }
+      @media (max-width: $mobile) {
+        top: auto;
+        left: auto;
+        margin: 20px 0px;
+      }
     }
   }
 
-  .BTNorange {
-    @include orangeBTN;
-    position: relative;
-    top: -120px;
-    left: 11%;
-  }
-
-  .BTNorange:hover {
+  .BTNorange:hover,
+  .BTNorange:focus {
     @include orangeBTNhover;
+    border: 2px solid $blue;
   }
 
   .BTNblue {
@@ -24,99 +49,195 @@ main {
     margin-top: 10px;
   }
 
-  .BTNblue:hover {
+  .BTNblue:hover,
+  .BTNblue:focus {
     @include blueBTNhover;
+    border: 2px solid $blue;
   }
+
   .network {
+    box-sizing: border-box;
     width: 90%;
     display: flex;
-    color: white;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 320px;
     margin-left: auto;
     padding: 70px;
-    box-sizing: border-box;
+    color: white;
+    background-image: url(/assets/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: $laptop) {
+      padding: 50px;
+    }
 
-    .network_heading {
+    @media (max-width: $tablet) {
+      background-image: none;
+      background-color: $pink;
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 20px;
+    }
+
+    h1 {
       margin-left: 80px;
+      @media (max-width: $laptop) {
+        font-size: 4rem;
+      }
+      @media (max-width: $tabletLandscape) {
+        font-size: 3.25rem;
+      }
+      @media (max-width: $tablet) {
+        margin-left: 0px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 2.5rem;
+      }
     }
 
     .network_details {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: space-between;
-      width: 30%;
-      margin-right: 20px;
+      margin-left: 20px;
+      width: 35%;
+
+      @media (max-width: $laptop) {
+        width: 40%;
+      }
+      @media (max-width: $tabletLandscape) {
+        width: 80%;
+        margin: 20px 0px 0px 0px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
     }
   }
+
   .events {
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: white;
     padding: 50px;
     margin-top: 55px;
+    background-image: url(/assets/Classroom.jpg);
+    background-repeat: no-repeat;
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+    }
 
     .events_details {
-      width: 50%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      line-height: 1.1;
-      margin-left: 20px;
-      padding: 10px 0px;
 
       p {
-        line-height: 1.2;
+        margin-bottom: 20px;
       }
 
-      .BTNorange2 {
+      .BTNorange {
         @include orangeBTN;
       }
 
-      .BTNorange2:hover {
+      .BTNorange:hover {
         @include orangeBTNhover;
+      }
+
+      @media (max-width: $laptop) {
+        width: 150%;
+      }
+      @media (max-width: $tabletLandscape) {
+        width: 190%;
+      }
+      @media (max-width: $tablet) {
+        width: 100%;
       }
     }
 
     .events_heading {
-      display: flex;
-      flex-direction: column;
-      margin-left: 35px;
+      margin-left: 45px;
+      line-height: 1.1;
+      @media (max-width: $laptop) {
+        font-size: 3.25rem;
+      }
+      @media (max-width: $tabletLandscape) {
+        font-size: 2.8rem;
+      }
+      @media (max-width: $tablet) {
+        margin: 0px 0px 20px 0px;
+      }
 
-      h2 {
-        line-height: 1.3;
+      @media (max-width: $mobile) {
+        font-size: 2rem;
       }
     }
   }
 
   .principles {
-    width: 90%;
-    height: 500px;
+    width: 80%;
+    min-height: 300px;
     color: white;
     margin-left: auto;
-    padding-top: 50px;
+    padding-top: 40px;
     box-sizing: border-box;
     margin-top: 55px;
     margin-bottom: 55px;
+    background-image: url(/assets/Banner2.svg);
+    background-repeat: no-repeat;
+    padding-left: 30%;
+    background-size: 160%;
+    @media (max-width: $laptop) {
+      padding-left: 15%;
+    }
+    @media (max-width: $tabletLandscape) {
+    }
+    @media (max-width: $tablet) {
+    }
 
-    h2 {
-      margin-left: 170px;
-      margin-bottom: 125px;
+    @media (max-width: $mobile) {
+    }
+
+    h3 {
+      margin-bottom: 20px;
+
+      @media (max-width: $laptop) {
+        font-size: 2.9rem;
+      }
+      @media (max-width: $tabletLandscape) {
+      }
+      @media (max-width: $tablet) {
+      }
+
+      @media (max-width: $mobile) {
+      }
     }
 
     p {
-      width: 80%;
+      width: 60%;
       line-height: 1.2;
-      font-size: 2.25rem;
-      margin-left: 120px;
-      filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.75));
-    }
-  }
 
-  .services {
-    img {
-      width: 100%;
+      @media (max-width: $laptop) {
+        width: 90%;
+      }
+      @media (max-width: $tabletLandscape) {
+      }
+      @media (max-width: $tablet) {
+      }
+
+      @media (max-width: $mobile) {
+      }
     }
   }
 }
