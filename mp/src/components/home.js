@@ -35,7 +35,7 @@ const Home = () => {
             together to develop socially impactful software solutions and
             empower underrepresented communities through STEM education.
           </p>
-          <button className="BTNorange">Learn More</button>
+          <button className="eventBTNorange">Learn More</button>
         </section>
         <h2 className="events_heading">
           Minority Programmers mission is to bring diversity through STEM
